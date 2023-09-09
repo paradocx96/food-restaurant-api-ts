@@ -1,0 +1,85 @@
+# FOOD RESTAURANT API
+
+###
+# group: MainMenu
+# @name Get All MainMenus
+GET http://localhost:5000/api/v1/mainMenus
+
+###
+# group: MainMenu
+# @name Get MainMenu By Id
+GET http://localhost:5000/api/v1/mainMenus/abeUdwnJwffgXa5Z4KIr
+
+###
+# group: MainMenu
+# @name Get MainMenu By MajorMenu
+GET http://localhost:5000/api/v1/mainMenus/majorMenu/Major1
+
+###
+# group: MainMenu
+# @name Get MainMenu With Foods
+GET http://localhost:5000/api/v1/mainMenus/foods/IxJ53v0uHnTpfRSLJGeQ
+
+###
+# group: MainMenu
+# @name Get All MainMenu With Foods
+GET http://localhost:5000/api/v1/mainMenus/all/foods
+
+###
+# group: MainMenu
+# @name Create MainMenu
+POST http://localhost:5000/api/v1/mainMenus
+Content-Type: application/json
+
+{
+  "name": "Menu Menu 3",
+  "title": "This is sample title for menu menu 3",
+  "description": "This is sample description for menu menu 3",
+  "majorMenu": "Major2"
+}
+
+###
+# group: MainMenu
+# @name Update MainMenu
+PUT http://localhost:5000/api/v1/mainMenus/IxJ53v0uHnTpfRSLJGeQ
+Content-Type: application/json
+
+{
+  "majorMenu": "Major1",
+  "name": "Menu 1",
+  "description": "This is sample description for menu 1",
+  "title": "This is sample title for menu 1"
+}
+
+###
+# group: MainMenu
+# @name Delete MainMenu By Id
+DELETE http://localhost:5000/api/v1/mainMenus/p1J8S6dTiqRTkwSsCEpG
+
+###
+# group: Food
+# @name Get All Foods
+GET http://localhost:5000/api/v1/foods
+
+###
+# group: Food
+# @name Create Food
+POST http://localhost:5000/api/v1/foods
+Content-Type: application/json
+
+{
+  "name": "Noodles Kottu",
+  "description": "Sri Lankan Noodles Kottu",
+  "price": "900",
+  "image": "https://d5gkm0jufpuln.cloudfront.net/2021/03/5-4.jpg",
+  "mainMenuId": "IxJ53v0uHnTpfRSLJGeQ"
+}
+
+###
+# group: Carousel
+# @name Get All Carousels
+GET http://localhost:5000/api/v1/carousels
+
+###
+# @name Root
+GET http://localhost:5000

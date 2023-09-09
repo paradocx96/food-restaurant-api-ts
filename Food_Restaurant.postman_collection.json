@@ -1,0 +1,308 @@
+{
+	"info": {
+		"_postman_id": "1bcd5422-41e8-42a8-8c23-fc463815eeb0",
+		"name": "FOOD RESTAURANT TS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15203197"
+	},
+	"item": [
+		{
+			"name": "MainMenu",
+			"item": [
+				{
+					"name": "Get All MainMenus",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/v1/mainMenus",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"mainMenus"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get MainMenu By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/v1/mainMenus/abeUdwnJwffgXa5Z4KIr",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"mainMenus",
+								"abeUdwnJwffgXa5Z4KIr"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get MainMenu By MajorMenu",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/v1/mainMenus/majorMenu/Major1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"mainMenus",
+								"majorMenu",
+								"Major1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get MainMenu With Foods",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/v1/mainMenus/foods/IxJ53v0uHnTpfRSLJGeQ",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"mainMenus",
+								"foods",
+								"IxJ53v0uHnTpfRSLJGeQ"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All MainMenu With Foods",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/v1/mainMenus/all/foods",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"mainMenus",
+								"all",
+								"foods"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create MainMenu",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Menu Menu 3\",\r\n    \"title\": \"This is sample title for menu menu 3\", \r\n    \"description\":\"This is sample description for menu menu 3\", \r\n    \"majorMenu\": \"Major2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/v1/mainMenus",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"mainMenus"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update MainMenu",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n            \"majorMenu\": \"Major1\",\r\n            \"name\": \"Menu 1\",\r\n            \"description\": \"This is sample description for menu 1\",\r\n            \"title\": \"This is sample title for menu 1\"\r\n        }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/v1/mainMenus/IxJ53v0uHnTpfRSLJGeQ",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"mainMenus",
+								"IxJ53v0uHnTpfRSLJGeQ"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete MainMenu By Id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/v1/mainMenus/p1J8S6dTiqRTkwSsCEpG",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"mainMenus",
+								"p1J8S6dTiqRTkwSsCEpG"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Food",
+			"item": [
+				{
+					"name": "Get All Foods",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/v1/foods",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"foods"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Food",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Noodles Kottu\",\r\n    \"description\":\"Sri Lankan Noodles Kottu\",\r\n    \"price\":\"900\",\r\n    \"image\":\"https://d5gkm0jufpuln.cloudfront.net/2021/03/5-4.jpg\",\r\n    \"mainMenuId\": \"IxJ53v0uHnTpfRSLJGeQ\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/v1/foods",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"foods"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Carousel",
+			"item": [
+				{
+					"name": "Get All Carousels",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/v1/carousels",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"carousels"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Root",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000"
+				}
+			},
+			"response": []
+		}
+	]
+}
