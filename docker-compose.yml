@@ -3,7 +3,7 @@ services:
   api:
     build: ./
     restart: always
-    container_name: food-restaurants-api
+    container_name: food-restaurant-api
     ports:
       - "5000:5000"
     environment:
