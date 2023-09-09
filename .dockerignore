@@ -1,0 +1,5 @@
+dist
+node_modules
+README.md
+.env-example
+credientials-example.json
