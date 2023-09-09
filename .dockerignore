@@ -3,3 +3,5 @@ node_modules
 README.md
 .env-example
 credientials-example.json
+Food_Restaurant.http
+Food_Restaurant.postman_collection.json
